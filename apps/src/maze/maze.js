@@ -268,6 +268,7 @@ module.exports = class Maze {
 
   reset_ = () => {
     this.animating_ = false;
+    timeoutList.clearTimeouts();
     this.controller.reset();
   };
 
